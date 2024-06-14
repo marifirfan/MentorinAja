@@ -16,7 +16,7 @@ if ($row['COUNT'] > 0) {
 } else {
     $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
-    $sql_insert = 'INSERT INTO tb_user (name, date_of_birth,email,address,regis_date,TB_ROLE_ID_ROLE,no_handphone, password) VALUES (:name, :date_of_birth,:email,:address,:regis_date,:TB_ROLE_ID_ROLE,:no_handphone, password)';
+    $sql_insert = 'INSERT INTO tb_user (name, date_of_birth,email,address,regis_date,TB_ROLE_ID_ROLE,no_handphone, password) VALUES (:name, :date_of_birth,:email,:address,:regis_date,:TB_ROLE_ID_ROLE,:no_handphone, password)';  
     $stid_insert = oci_parse($conn, $sql_insert);
     oci_bind_by_name($stid_insert, ':name', $name);
     oci_bind_by_name($stid_insert, ':date_of_birth', $date_of_birth);

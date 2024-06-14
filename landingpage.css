@@ -1,134 +1,136 @@
-*{
-    font-family: Tahoma;
+* {
+  font-family: Tahoma;
+}
+
+.pembatas{
+    margin:450px;
 }
 
 body {
-    background-color: #FFFF;
-    margin: 0;
-    font-family: Arial, sans-serif;
+  background-color: #ffff;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .logo img {
-    height: 40px;
-    margin-right: 10px;
+  height: 40px;
+  margin-right: 10px;
 }
 
 .brand-name {
-    font-size: 20px;
-    font-weight: thin;
-    color: black;
+  font-size: 20px;
+  font-weight: thin;
+  color: black;
 }
 
 .menu {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-.menu .login-button{
-    color: #ffff;
+.menu .login-button {
+  color: #ffff;
 }
-
-
 
 .menu a {
-    text-decoration: none;
-    color: black;
-    margin-left: 20px;
-    font-size: 16px;
+  text-decoration: none;
+  color: black;
+  margin-left: 20px;
+  font-size: 16px;
 }
 
 .login-button {
-    background-color: #3369EA;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 4px;
+  background-color: #3369ea;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
 }
 
 .container {
-    position: absolute;
-    top: 275px;
-    left: 133px;
+  position: absolute;
+  top: 275px;
+  left: 133px;
 }
 
 .main-heading {
-    font-size: 28px;
-    font-weight: 500;
-    margin: 0;
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0;
 }
 
 .search-box-container {
-    position: relative;
-    margin-top: 20px;
+  position: relative;
+  margin-top: 20px;
 }
 
 .search-box {
-    width: 407px;
-    height: 34px;
-    border: 2px solid #3369EA;
-    padding: 5px 10px;
-    font-size: 16px;
-    border-radius: 500px;
-    padding-right: 40px; 
+  width: 407px;
+  height: 34px;
+  border: 2px solid #3369ea;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 500px;
+  padding-right: 40px;
 }
 
 .filter-bar {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    width: 407px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 407px;
 }
 
 .filter-box {
-    flex: 1;
-    text-align: center;
-    padding: 10px;
-    margin: 0 5px;
-    background-color: #3369EA;
-    border-radius: 500px;
-    font-size: 16px;
-    cursor: pointer;
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  margin: 0 5px;
+  background-color: #3369ea;
+  border-radius: 500px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .search-button {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .search-button img {
-    height: 20px;
+  height: 20px;
 }
 
 .ilustrasi {
-    position: absolute;
-    top: 155px;
-    left: 768px;
+  position: absolute;
+  top: 155px;
+  left: 768px;
 }
 
 .ilustrasi img {
-    width: 600px;
-    height: 375px;
+  width: 600px;
+  height: 375px;
 }
 
-.filter-bar a{
-    text-decoration: none;
-    color: #FFFF;
+.filter-bar a {
+  text-decoration: none;
+  color: #ffff;
 }
