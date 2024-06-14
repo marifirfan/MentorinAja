@@ -1,0 +1,170 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f9fc;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    height: 700px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  .left-side {
+    width: 50%;
+    background-color: #0a5db6;
+    padding: 40px;
+    border-radius: 12px 0 0 12px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: #fff;
+    overflow: hidden;
+  }
+
+  .right-side {
+    width: 50%;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0 12px 12px 0;
+    position: relative;
+  }
+
+  .circle-1, .circle-2, .circle-3 {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.2;
+  }
+
+  .circle-1 {
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    top: -50px;
+    left: -50px;
+  }
+
+  .circle-2 {
+    width: 200px;
+    height: 200px;
+    background-color: #4caf50;
+    bottom: 50px;
+    left: 50px;
+  }
+
+  .circle-3 {
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    top: 100px;
+    right: -75px;
+  }
+
+  .text-box {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    z-index: 1;
+    text-align: left;
+    max-width: 150%;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+
+  .right-side h2 {
+    color: #0a5db6;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .input-field {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #0a5db6;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #333;
+  }
+
+  .input-field:focus {
+    outline: none;
+    border: 1px solid #084a8c;
+    box-shadow: 0 0 5px rgba(10, 93, 182, 0.5);
+  }
+
+  .button {
+    background-color: #0a5db6;
+    color: #fff;
+    padding: 15px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+
+  .button:hover {
+    background-color: #084a8c;
+  }
+
+  .sign-in-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sign-in {
+    color: #0a5db6;
+    text-decoration: none;
+  }
+
+  .sign-in:hover {
+    text-decoration: underline;
+  }
+
+  .password-container {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .show-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    color: #888;
+    z-index: 1;
+  }
+
+  .show-password:hover {
+    color: #0a5db6;
+  }
+
+  /* Gunakan Montserrat untuk bagian Sign up dan Selamat datang */
+  .montserrat-signup {
+    font-family: 'Montserrat', sans-serif;
+  }

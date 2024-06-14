@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up Form</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./signup.css">
+    
+</head>
+<style>
+
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="left-side montserrat-signup">
+    <div class="circle-1"></div>
+    <div class="circle-2"></div>
+    <div class="circle-3"></div>
+    <div class="text-box">
+      <p>Kalian bingung mencari pengajar atau guru les? Temukan solusinya di Mentorin Aja!</p>
+      <p>"Selamat datang di Mentorin Aja! Kami hadir untuk mengatasi tantangan Anda dalam proses belajar dengan menyediakan fitur-fitur yang memudahkan mentoring. Kami menawarkan layanan mentoring kepada siapa pun yang ingin belajar dari berbagai kalangan. Mari bergabung dan mulailah perjalanan pembelajaran Anda bersama kami!"</p>
+    </div>
+  </div>
+  <div class="right-side montserrat-signup">
+    <h2>Sign up</h2>
+    <input type="text" class="input-field" placeholder="Nama">
+    <input type="email" class="input-field" placeholder="Email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Masukkan alamat email yang valid">
+    <input type="date" class="input-field" placeholder="Tanggal Lahir">
+    <input type="tel" class="input-field" placeholder="No Hp" pattern="[0-9]{10,12}" title="Masukkan nomor telepon yang valid">
+    <input type="text" class="input-field" placeholder="Alamat Domisili">
+    <div class="password-container">
+      <input type="password" class="input-field" placeholder="Password">
+      <span class="show-password">&#128065;</span>
+    </div>
+    <div class="password-container">
+      <input type="password" class="input-field" placeholder="Confirm Password">
+      <span class="show-password">&#128065;</span>
+    </div>
+    <button class="button">Sign Up</button>
+    <div class="sign-in-container">
+      <p>Sudah Mempunyai Akun? <a href="#" class="sign-in">Sign in</a></p>
+    </div>
+  </div>
+</div>
+<script>
+  const showPasswordToggles = document.querySelectorAll('.show-password');
+
+  showPasswordToggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+      const input = toggle.previousElementSibling;
+      if (input.type === 'password') {
+        input.type = 'text';
+        toggle.innerHTML = '&#10006;'; // Cross icon
+      } else {
+        input.type = 'password';
+        toggle.innerHTML = '&#128065;'; // Eye icon
+      }
+    });
+  });
+</script>
+</body>
+</html>

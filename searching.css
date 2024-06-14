@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.header .search-bar {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.header .search-bar input {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.header .user-icon img {
+    height: 40px;
+    border-radius: 50%;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #0056b3;
+}
+
+.filters select,
+.filters button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: #0056b3;
+    cursor: pointer;
+}
+
+.filters button {
+    background-color: #fff;
+    color: #0056b3;
+}
+
+.filters button:hover {
+    background-color: #e0e0e0;
+}
+
+.mentorship-section {
+    text-align: left;
+    padding: 20px;
+    font-size: 22px;
+}
+
+.mentorship-section h2 {
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #394559;
+}
+
+.mentorship-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: left;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h3 {
+    font-weight: 700;
+    margin: 10px 0;
+    color: #394559;
+}
+
+.card p {
+    font-weight: 400;
+    color: #555;
+}
+
+.card .price {
+    font-weight: 700;
+    color: #007bff;
+}
+
+.card .rating {
+    font-weight: 400;
+    color: #ff9900;
+}
+
+/* CSS untuk desktop */
+@media (min-width: 1024px) {
+    .mentorship-section {
+        text-align: left;
+        padding: 20px;
+        font-size: 22px;
+    }
+
+    .mentorship-cards {
+        display: flex;
+        justify-content: flex-start; 
+        gap: 20px; 
+        flex-wrap: wrap; 
+        margin: 0 -10px;
+    }
+
+    .card {
+        flex: 1 1 calc(33.33% - 20px);
+        max-width: calc(33.33% - 20px); 
+        padding: 20px; 
+        background-color: #ffffff; 
+        border-radius: 10px; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease; 
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    .card h3 {
+        font-weight: 700;
+        font-size: 1.6rem; 
+        margin: 10px 0; 
+        color: #394559; 
+    }
+
+    .card p {
+        font-weight: 400; 
+        font-size: 1.1rem;
+        color: #555; 
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+
+    .card .price {
+        font-weight: 700;
+        color: #007bff;
+    }
+
+    .card .rating {
+        font-weight: 400;
+        color: #ff9900;
+    }
+}
