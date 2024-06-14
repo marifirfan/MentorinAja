@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentorin Aja</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./login.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="login-section">
+            <h1>Selamat Datang, Di Mentorin Aja!</h1>
+            <p class="description">Tembuslah pintu menuju tempat di mana pengetahuan bertemu perubahan. Silakan masukkan email dan password Anda di bawah ini untuk melanjutkan.</p>
+            <form action="./php/login.php" method="post">
+                <label for="email">E-mail</label>
+                <div class="input-container">
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <label for="password">Password</label>
+                <div class="input-container">
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+            <a href="#" class="forgot-password">Lupa Kata Sandi?</a>
+            <a href="#" class="create-account">Belum Mempunyai Akun? Buat Akun</a>
+        </div>
+        <div class="info-section">
+            <div class="info-box">
+                <p>Kalian bingung mencari pengajar atau guru les? Temukan solusinya di Mentorin Aja!</p>
+                <blockquote>
+                    "Selamat datang di Mentorin Aja! Kami hadir untuk mengatasi tantangan Anda dalam proses belajar dengan menyediakan fitur-fitur yang memudahkan dalam mencari. Kami menyediakan layanan mentoring kepada siapa pun yang ingin belajar dari berbagai kalangan. Mari bergabung dan mulailah Perjalanan pembelajaran Anda bersama kami!"
+                </blockquote>
+            </div>
+        </div>
+        <div class="circle-large"></div>
+        <div class="circle-medium"></div>
+    </div>
+</body>
+</html>
