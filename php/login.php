@@ -19,9 +19,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $user = oci_fetch_assoc($stid);
 
         if ($user) {
-            echo "Login berhasil!<br>";
+            header("Location: ../searching.html");
+            // echo "Login berhasil!<br>";
         } else {
-            echo "Login gagal! Email atau password salah.";
+            echo "<script>alert('Password salah'); window.location.href='../login.html';</script>";
         }
 
         oci_free_statement($stid);

@@ -8,9 +8,4 @@
         else {
             echo 'Connected successfully!' ."<br>";
         }
-
-
-        
-
-
         ?>
