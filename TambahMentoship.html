@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Mentorship</title>
+    <link rel="stylesheet" href="./TambahMentorship.css">
+</head>
+<body>
+    <div class="tambah-mentorship">
+        <div class="jadilah-mentor">Jadilah Mentor</div>
+        
+        <div class="group-4">
+            <label for="bidang-mentor-input" class="label">Masukkan Bidang mentor</label>
+            <input type="text" id="bidang-mentor-input" placeholder="Bidang Mentor" class="input-field">
+        </div>
+        
+        <div class="group-6">
+            <label for="offline-online-select" class="label">Dilakukan secara</label>
+            <select id="offline-online-select" class="input-field">
+                <option value="Offline/Online">Offline/Online</option>
+                <option value="Offline">Offline</option>
+                <option value="Online">Online</option>
+            </select>
+        </div>
+        
+        <div class="group-7">
+            <label for="deskripsi-singkat-textarea" class="label">Deskripsi</label>
+            <textarea id="deskripsi-singkat-textarea" placeholder="Deskripsi singkat" class="input-field"></textarea>
+        </div>
+        
+        <div class="group-5">
+            <label for="upload-input" class="label">Upload Gambar</label>
+            <label for="upload-input" class="upload-label">
+                <div class="icon-image-plus">&#43;</div>
+            </label>
+            <input type="file" id="upload-input" accept="image/*">
+        </div>
+        
+        <div class="group-8">
+            <label for="harga-input" class="label">Harga</label>
+            <input type="text" id="harga-input" placeholder="Rp." class="input-field">
+        </div>
+        
+        <div class="rectangle-submit">
+            <button class="submit">Submit</button>
+        </div>
+    </div>
+</body>
+</html>
